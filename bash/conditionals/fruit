@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#This script will output the possible colors of three fruit: apple, banana, and kiwi
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: $0 <fruitname>"
+    exit 1
+fi
+
+case $1 in 
+    apple)
+        echo "green, yellow, red, or pink"
+        ;;
+    banana)
+        echo "yellow"
+        ;;
+    kiwi)
+        echo "brown"
+        ;;
+esac
